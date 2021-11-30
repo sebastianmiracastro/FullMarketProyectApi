@@ -1,0 +1,62 @@
+.ContainerAll{
+    background-color: white;
+    margin-left: 100px;
+    width: 720px;
+    height: 700px;
+
+}
+.ContainerButtons{
+    margin-top: 120px; 
+    margin-left: 150px;
+}
+.InputEmailContent{
+    border: 3px solid #2ac9e6;
+    height: 35px;
+    border-radius:  0.5em;
+    background-color: white;
+    height: 30px;
+    width: 400px;
+}
+.InputPasswordContent{
+    border: 3px solid #2ac9e6;
+    height: 30px;
+    width: 400px;
+    border-radius:  0.5em;
+    background-color: white;
+    margin-top: 30px;
+}
+.MissedButtonContent{
+    margin-top: 12px;
+    color: #2ac9e6;
+    margin-left: 65px;
+    font-size: 1.5em;
+}
+.AccountLoginContent{
+    margin-left: 100px;
+    margin-top: 30px;
+    background-color: #2ac9e6;
+    width: 200px;
+    height: 35px;
+    text-align: center;
+    border-radius: 2em;
+    font-size: 1.5em;
+}
+.NewAccountButtonContent{
+    margin-left: 105px;
+    margin-top: -15px;
+    background-color: #2ac9e6;
+    width: 200px;
+    height: 65px;
+    text-align: center;
+    border-radius: 3em;
+    font-size: 1.5em;
+}
+.MissedButtonContent:hover, .NewAccountButtonContent:hover, .AccountLoginContent:hover{
+    cursor: pointer;
+}
+  
+.DecorationPlaceHolder{
+    color: #6262625d;
+    margin-left: 50px;
+    font-size: 1.5em;
+} 

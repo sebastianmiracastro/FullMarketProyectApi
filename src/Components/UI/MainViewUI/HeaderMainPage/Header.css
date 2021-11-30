@@ -1,0 +1,32 @@
+.Container-Header{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+}
+.ContentOptionsNavBar{
+    display: flex;
+    justify-content: space-evenly;
+    width: 400px;
+    color: white;
+    margin-top: 70px;
+}
+
+.ImgContent{
+    height: 180px;
+}
+.OptionNavbar{
+    background-color: #45b3f3;
+    height: 30px;
+    width: 120px;
+    border-radius: 2em;
+    text-align: center;
+}
+.OptionNavbar:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: 300ms;
+}
+.Content-Page{
+    background-color:blueviolet ;
+    height: 10px;
+}
