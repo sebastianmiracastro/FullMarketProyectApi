@@ -16,7 +16,6 @@ export const Header =()=>{
                 </nav>                    
             </div>
             <div className="Content-Page">
-
             </div>
         </>
     );
