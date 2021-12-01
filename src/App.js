@@ -1,26 +1,25 @@
 import './App.css';
+import { HomePageLogin } from './Components/Page/HomePageLogin/HomePageLogin';
+import { Home } from './Components/Page/Home/Home.jsx';
+
 import React from "react";
-import { 
+import {
   BrowserRouter as Router,
   Switch,
-  Route,
-} from "react-router-dom"
+  Route,  
+} from "react-router-dom";
 
-import { Home } from './Components/Page/MainViewPage/MainPage';
-import { HomePageLogin } from './Components/Page/LoginViewPage/HomeLoginPage';
-
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <Router>
-        <Switch>
-          <Route exact path="/Login">
-            <HomePageLogin />
-          </Route>
-        </Switch>
-      </Router>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>        
+        <Route exact path="/Login">
+          <HomePageLogin />
+        </Route>        
+      </Switch>      
+    </Router>
   );
 }
-
-export default App;
