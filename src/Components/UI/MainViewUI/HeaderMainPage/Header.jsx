@@ -1,5 +1,7 @@
 import './Header.css'
 import ImgLogoFullMarket from '../../../../Images/Images-MainView/FullMarket.jpeg'
+import { Link } from 'react-router-dom';
+
 
 export const Header =()=>{
     return(
@@ -8,8 +10,8 @@ export const Header =()=>{
                 <img src={ImgLogoFullMarket} alt="" className="ImgContent"></img>
                 <nav className="NavBarContainer">
                     <div className="ContentOptionsNavBar">
-                        <a className="OptionNavbar" value="Iniciar_sesion">Iniciar sesion</a>
-                        <a className="OptionNavbar" value="Registrarse">Registrarse</a>
+                        <Link to="/"><a className="OptionNavbar" value="Iniciar_sesion">Home</a></Link>
+                        <Link to="/Login"><a className="OptionNavbar" value="Iniciar_sesion">Iniciar sesion</a></Link>                        
                     </div>
                 </nav>                    
             </div>

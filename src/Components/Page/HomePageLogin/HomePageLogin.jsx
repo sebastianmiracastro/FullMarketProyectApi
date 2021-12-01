@@ -1,4 +1,4 @@
-import './HomeLoginPage.css'
+import './HomePageLogin.css'
 import { LoginPage } from '../../Layout/LoginViewLayout/LayoutLoginView'
 
 export const HomePageLogin = () => {
