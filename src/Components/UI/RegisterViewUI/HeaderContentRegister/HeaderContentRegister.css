@@ -1,0 +1,20 @@
+.ImageContentHeader{
+    width: 500px;
+}
+.TittleContentIni{
+    text-shadow: 0 0 15px #4dc7e6;
+    color:white; 
+    font-size: 4em;
+}
+.ContainerProgram{
+    
+    text-align: center;
+    margin-left: 20px;
+}
+.TxTContentLogin{
+    color:white;
+    font-size: 2.5em;
+    width: 400px; 
+    margin-left: 25px;
+    margin-top: -50px ;
+}

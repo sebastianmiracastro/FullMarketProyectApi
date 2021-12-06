@@ -10,8 +10,9 @@ export const Header =()=>{
                 <img src={ImgLogoFullMarket} alt="" className="ImgContent"></img>
                 <nav className="NavBarContainer">
                     <div className="ContentOptionsNavBar">
-                        <Link to="/"><a className="OptionNavbar" value="Iniciar_sesion">Home</a></Link>
-                        <Link to="/Login"><a className="OptionNavbar" value="Iniciar_sesion">Iniciar sesion</a></Link>                        
+                        {/* <Link to="/"><a className="OptionNavbar" value="Iniciar_sesion">Home</a></Link> */}
+                        <Link to="/Login"><a className="OptionNavbar" value="Iniciar_sesion">Iniciar sesion</a></Link>
+                        <Link to="/Register"><a className="OptionNavbar" value="Iniciar_sesion">Registrarse</a></Link>                         
                     </div>
                 </nav>                    
             </div>
