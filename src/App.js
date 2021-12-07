@@ -1,6 +1,8 @@
 import './App.css';
 import { HomePageLogin } from './Components/Page/HomePageLogin/HomePageLogin';
 import { Home } from './Components/Page/Home/Home.jsx';
+import { HomePageRegister } from './Components/Page/HomePageRegister/HomePageRegister';
+import { HomePageUserProfile } from './Components/Page/HomePageUserProfile/HomePageUserProfile'
 
 import React from "react";
 import {
@@ -18,7 +20,13 @@ export default function App() {
         </Route>        
         <Route exact path="/Login">
           <HomePageLogin />
-        </Route>        
+        </Route>
+        <Route exact path="/Register">
+          <HomePageRegister />
+        </Route>     
+        <Route exact path="/UserProfile">
+          <HomePageUserProfile />
+        </Route>
       </Switch>      
     </Router>
   );
