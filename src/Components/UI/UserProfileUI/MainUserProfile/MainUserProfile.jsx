@@ -19,11 +19,9 @@ export function MainUserProfile(props) {
         cookies.remove('Municipio', {path:'/'});
         cookies.remove('Direccion', {path:'/'});
         cookies.remove('Telefono', {path:'/'});
-        props.history.push('/Login')
     }
     useEffect(() => {
         if(!cookies.get('id')){
-            props.history.push('/');
         }
     },[]);
 

@@ -1,16 +1,18 @@
-const _URL = 'https://localhost:44355/'
+import React from 'react';
+import axios from 'axios';
 
-export async function SaveUser (NombreCompleto, TD, NIdentifi, Correo, Password, Genero, Departamento, Municipio, Direccion, Telefono) {
-    const endpoint = 'api/UsersRegisters'; 
-    const a = `${_URL}${endpoint}`
-    debugger;
-    return await fetch(a, {
-        mode: 'no-cors',
-        method: "POST",
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({a: 1, b: 'Textual content'})
-      });
+const UrlPostRegister = 'https://localhost:44355/api/UsersRegisters';
+
+export async function SaveUser(UserData){
+    try{
+        const response = await axios({
+            url: `${UrlPostRegister}`,
+            method: 'POST',
+            data: UserData,
+        })
+
+        return response;
+    }catch (e) {
+        console.log(e);
+    }
 }

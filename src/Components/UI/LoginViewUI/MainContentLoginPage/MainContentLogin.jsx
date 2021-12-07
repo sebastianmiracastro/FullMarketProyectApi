@@ -1,6 +1,6 @@
 import react, {useEffect, useState, useHistory} from 'react';
 import './MainContentLogin.css'
-import { Link, withRouter } from 'react-router-dom';
+import { Link, withRouter, Redirect, browserHistory } from 'react-router-dom';
 import Cookies from 'universal-cookie';
 import axios from 'axios';
 
@@ -9,6 +9,8 @@ export const Main =(props)=>{
     const UrlRequestLogin = "https://localhost:44355/api/UsersRegisters/"
 
     const cookie = new Cookies();
+
+    const  Router = require('react-router-dom')
 
     const [Form, setForm] = useState({
         Correo:'',
@@ -42,6 +44,7 @@ export const Main =(props)=>{
                 cookie.set('Direccion', answer.direccion, {path: '/'});
                 cookie.set('Telefono', answer.telefono, {path: '/'});
                 alert("Bienvenido " + answer.nombreCompleto);
+                Router.browserHistory.push('/UserProfile')
             }
             else{
                 alert("Usuario O Contraseña Incorrectos");
