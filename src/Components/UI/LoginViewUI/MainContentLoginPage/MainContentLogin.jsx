@@ -4,7 +4,7 @@ import { Link, withRouter, Redirect, browserHistory } from 'react-router-dom';
 import Cookies from 'universal-cookie';
 import axios from 'axios';
 
-export const Main =(props)=>{
+export const Main = () =>{
 
     const UrlRequestLogin = "https://localhost:44355/api/UsersRegisters/"
 
@@ -30,7 +30,7 @@ export const Main =(props)=>{
         .then(response=> {
             return response.data;
         }).then(response => {
-            if(response.length>0){
+            if (response.length>0) {
                 let answer=response[0];
                 cookie.set('id', answer.id, {path: '/'});
                 cookie.set('NombreCompleto', answer.nombreCompleto, {path: '/'});
@@ -44,7 +44,7 @@ export const Main =(props)=>{
                 cookie.set('Direccion', answer.direccion, {path: '/'});
                 cookie.set('Telefono', answer.telefono, {path: '/'});
                 alert("Bienvenido " + answer.nombreCompleto);
-                Router.browserHistory.push('/UserProfile')
+                window.location = '/UserProfile';
             }
             else{
                 alert("Usuario O Contraseña Incorrectos");
@@ -55,11 +55,11 @@ export const Main =(props)=>{
         })
     }
 
-    // useEffect(()=>{
-    //     if(cookie.get('id')){
-    //         Redirect('/UserProfile');
-    //     }
-    // },[]);
+    useEffect(()=>{
+         if(cookie.get('id')){
+            window.location = '/UserProfile';
+        }
+    },[]);
 
     return(
         <>

@@ -19,13 +19,17 @@ export function MainUserProfile(props) {
         cookies.remove('Municipio', {path:'/'});
         cookies.remove('Direccion', {path:'/'});
         cookies.remove('Telefono', {path:'/'});
+        window.location = '/Login';
+        
     }
     useEffect(() => {
         if(!cookies.get('id')){
+            window.location = '/Login'
         }
     },[]);
 
     return (
+
         <div>
             <button onClick={()=>CloseSession()} className="CloseSesSionButton">Cerrar Sesion</button>
             <h5>ID: {cookies.get('id')}</h5>
