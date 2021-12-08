@@ -10,8 +10,6 @@ export const Main = () =>{
 
     const cookie = new Cookies();
 
-    const  Router = require('react-router-dom')
-
     const [Form, setForm] = useState({
         Correo:'',
         Password:''
