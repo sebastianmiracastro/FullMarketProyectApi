@@ -8,7 +8,7 @@ export const MainReg = () => {
 
     const UrlColombia = 'https://www.datos.gov.co/resource/xdk5-pm3f.json';
 
-    const URLApiPost = 'http://www.purebanet.somee.com/api/UsersRegisters';
+    const URLApiPost = 'https://www.fullmarket.somee.com/api/UsersRegisters/';
 
     const [nombreCompleto, setNombreCompleto] = useState('');
     const [td, setTD] = useState('');
@@ -24,7 +24,7 @@ export const MainReg = () => {
 
     const response = async  (e) => {
         e.preventDefault()
-        axios.post('http://fullmarket.somee.com/api/UsersRegisters', {
+        axios.post('https://www.fullmarket.somee.com/api/UsersRegisters/', {
             
                 NombreCompleto: nombreCompleto,
                 TD: td,
