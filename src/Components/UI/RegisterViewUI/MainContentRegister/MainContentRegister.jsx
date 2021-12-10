@@ -8,7 +8,7 @@ export const MainReg = () => {
 
     const UrlColombia = 'https://www.datos.gov.co/resource/xdk5-pm3f.json';
 
-    const URLApiPost = 'https://localhost:44355/api/UsersRegisters';
+    const URLApiPost = 'http://fullmarket.somee.com/api/UsersRegisters';
 
     const [nombreCompleto, setNombreCompleto] = useState('');
     const [td, setTD] = useState('');
