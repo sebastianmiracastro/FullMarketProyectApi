@@ -13,7 +13,6 @@ import {
 
 export default function App() {
   return (
-    <head><meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"></meta>
     <Router>
       <Switch>
         <Route exact path="/">
@@ -30,6 +29,5 @@ export default function App() {
         </Route>
       </Switch>      
     </Router>
-    </head>
   );
 }
