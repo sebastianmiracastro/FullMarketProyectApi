@@ -24,33 +24,27 @@ export const MainReg = () => {
 
     const response = async  (e) => {
         e.preventDefault()
-        const res = await fetch(`${URLApiPost}`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Access-Control-Allow-Origin': '*'},
-                body:JSON.stringify({
-                    NombreCompleto: nombreCompleto,
-                    TD: td,
-                    NIdentifi: nIdentifi,
-                    Correo: correo,
-                    Password: password,
-                    Genero: genero,
-                    Departamento: departamento,
-                    Municipio: municipio,
-                    Direccion: direccion,
-                    Telefono: telefono
-                })
-        }) 
-        if (response === true) {
-            alert('Funciono')
+        axios.post('http://fullmarket.somee.com/api/UsersRegisters', {
+            
+                NombreCompleto: nombreCompleto,
+                TD: td,
+                NIdentifi: nIdentifi,
+                Correo: correo,
+                Password: password,
+                Genero: genero,
+                Departamento: departamento,
+                Municipio: municipio,
+                Direccion: direccion,
+                Telefono: telefono
+            
+          })
+          .then(function (response) {
+            console.log(response);
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
         }
-        else {
-            alert('Nonas')
-        }
-    } 
-
-
 
     return(
         <>
