@@ -1,0 +1,118 @@
+.ContainerAll{
+    background-color: #ffffff;
+    margin-left: 10rem;
+    width: 80rem;
+    height: 41rem;
+}
+button{
+    margin-left: 8rem;
+    margin-top: 30px;
+    background-color: #00E8FF;
+    color: #000;
+    cursor: pointer;
+    border-radius: 5rem;
+    border: #00E8FF;
+    width: 10rem;
+    height: 2rem;
+    font-size: 1rem;
+}
+li {
+    list-style: none;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #0AFF38;
+    color: #000000;
+    transition: 600ms;
+}
+.ContainerButtons{
+    margin-top: 2.5rem; 
+    margin-left: 6.5rem;
+}
+.inputInfo {
+    border: 2px solid #00E8FF;
+    border-radius:  0.5em;
+    background-color: #ffffff;
+    height: 1.8rem;
+    width: 30rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.MissedButtonContent{
+    margin-top: 12px;
+    color: #00E8FF;
+    margin-left: 65px;
+    font-size: 1.5em;
+    width: auto;
+    height: 1rem;
+}
+.AccountLoginContent{
+    margin-left: 8rem;
+    margin-top: 30px;
+    background-color: #2ac9e6;
+    width: 10rem;
+    height: 35px;
+    text-align: center;
+    border-radius: 2em;
+    font-size: 1.5em;
+}
+
+.redirectReg {
+    display: flex;
+    justify-content: center;
+}
+
+h3{
+    margin-top: 22rem;
+    margin: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: #000000;
+    text-align: center;
+}
+
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    width: 10rem;
+    height: 2rem;
+    align-items: center;
+    background-color: #00E8FF;
+    color: #000000;
+    border-radius: 5rem;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 0rem;
+}
+a:hover{
+    background-color: #0AFF38;
+    color: #000000;
+    transition: 600ms;
+}
+
+.NewAccountButtonContent{
+    margin-left: 10rem;
+    margin-top: 5px;
+    background-color: #00E8FF;
+    width: 200px;
+    height: 65px;
+    text-align: center;
+    border-radius: 3em;
+    font-size: 1.5em;
+}
+.MissedButtonContent:hover, .NewAccountButtonContent:hover, .AccountLoginContent:hover{
+    cursor: pointer;
+}
+  
+.DecorationPlaceHolder{
+    color: #6262625d;
+    margin-left: 3rem;
+    margin-top: 0rem;
+    font-size: 1.5em;
+} 
+

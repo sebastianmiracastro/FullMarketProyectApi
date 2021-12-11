@@ -1,22 +1,21 @@
 import './Header.css'
-import ImgLogoFullMarket from '../../../../Images/Images-MainView/FullMarket.jpeg'
+import LogoFullMarket from '../../../../Images/Images-MainView/FullMarket.png'
 import { Link } from 'react-router-dom';
 
 
 export const Header =()=>{
     return(
         <>
-            <div className="Container-Header">
-                <img src={ImgLogoFullMarket} alt="" className="ImgContent"></img>
-                <nav className="NavBarContainer">
-                    <div className="ContentOptionsNavBar">
-                        {/* <Link to="/"><a className="OptionNavbar" value="Iniciar_sesion">Home</a></Link> */}
-                        <Link to="/Login"><a className="OptionNavbar" value="Iniciar_sesion">Iniciar sesion</a></Link>
-                        <Link to="/Register"><a className="OptionNavbar" value="Iniciar_sesion">Registrarse</a></Link>                         
+            <div className="header">
+                <img src={LogoFullMarket} alt="" className="LogoFullMarket"></img>
+                <nav className="NavBar">
+                    <div className="NavBarOptions">
+                        <Link to="/Login"><a value="Iniciar_sesion">Iniciar sesión</a></Link>
+                        <Link to="/Register"><a value="Iniciar_sesion">Registrarse</a></Link>                         
                     </div>
                 </nav>                    
             </div>
-            <div className="Content-Page">
+            <div className="spaceHeader">
             </div>
         </>
     );

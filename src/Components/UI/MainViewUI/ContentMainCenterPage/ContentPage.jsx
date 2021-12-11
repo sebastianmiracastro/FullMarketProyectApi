@@ -1,18 +1,16 @@
 import './ContentPage.css'
-import ImageFS from '../../../../Images/Images-MainView/SaleMain.jpeg'
+import ImgMain from '../../../../Images/Images-MainView/Main.jpeg'
 
 export const Main=()=>{
     return(
         <>
-            <div className="MainContainer">
-                <div className="ContentTxT">
-                    <h1 className="TittleContent">Bienvenidos a FullMarket </h1>
-                    <p className="TextContent">Registrate e inicia sesion si no estas 
-                    resgistrado; para vivir una maravillosa experiencia</p>
-                </div>
-                <img src={ImageFS} alt="" className="ImageContent"></img>
-            </div>
-            <div className="ContentFinish"></div>
+        <div className='body'>
+            <h1>¿Te surgen inconformidades con productos que ya no utilizas o bien;<br></br> necesitas productos en buen estado sin necesidad de gastar tu dinero?. En<br></br>
+            FullMarket te enseñamos la mejor de las opciones  para brindarte la solucion<br></br>
+            a las posibles inconformidades que te surgen con tus objetos.<br></br>
+            <br></br>¡¡FullMarket les da la oportunidad de ser reutilizados por alguien más<br></br> o mejor aún; INTERCAMBIARLOS!! </h1>
+            <img src={ ImgMain } alt="" className="imgMain"></img>
+        </div>
         </>
     );
 }
