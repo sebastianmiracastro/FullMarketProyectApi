@@ -39,7 +39,7 @@ export const MainReg = () => {
           })
           .then(function (response) {
             console.log(response);
-            window.location('/Login')
+            window.location = '/Login';
           })
           .catch(function (error) {
             console.log(error);
