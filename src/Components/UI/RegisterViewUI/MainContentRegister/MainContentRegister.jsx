@@ -3,12 +3,11 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { Router } from 'react-router';
 import { SaveUser } from '../../../../Service/RegisterService';
+import { Link } from 'react-router-dom';
 
 export const MainReg = () => {
 
     const UrlColombia = 'https://www.datos.gov.co/resource/xdk5-pm3f.json';
-
-    const URLApiPost = 'https://www.fullmarket.somee.com/api/UsersRegisters/';
 
     const [nombreCompleto, setNombreCompleto] = useState('');
     const [td, setTD] = useState('');
@@ -49,31 +48,25 @@ export const MainReg = () => {
     return(
         <>
         <form onSubmit={response}>
-            <div className='information'>
-                <input name="NombreCompleto" onChange={e => setNombreCompleto(e.target.value)} className='#' type='text' id='#' placeholder='Nombre Completo'></input>
-                <select className='#' onChange={e => setTD(e.target.value)} id='#' placeholder='Tipo de Identificacion'>
-                    <option value="Targeta De Identidad">Targeta De Identidad</option>
-                    <option value="Cedula De Ciudadania">Cedula De Ciudadania</option>
-                    <option value="Pasaporte">Pasaporte</option>
-                    <option value="Identificacion Extranjera">Identificacion Extranjera</option>
-                </select>
-                <input onChange={e => setNIdentifi(e.target.value)} className='#' type='number' id='#' placeholder='Numero de Identificacion'></input>
-                <input onChange={e => setCorreo(e.target.value)} className='#' type='text' id='#' placeholder='Correo Electronico'></input>
-                <input onChange={e => setPassword(e.target.value)} className='#' type='password' id='#' placeholder='Contraseña'></input>
-                <select onChange={e => setGenero(e.target.value)} className='#' id='#' placeholder='Genero'>
-                    <option value="Masculino">Masculino</option>
-                    <option value="Femenino">Femenino</option>
-                    <option value="Transgenero">Transgenero</option>
-                    <option value="Otro">Otro</option>
-                    <option value="Indefinido">Indefinido</option>
-                </select>
-                <input onChange={e => setDepartamento(e.target.value)} className='#' type='text' id='#' placeholder='Departamento'></input>
-                <input onChange={e => setMunicipio(e.target.value)} className='#' type='text' id='#' placeholder='Municipio'></input>
-                <input onChange={e => setDireccion(e.target.value)} className='#' type='text' id='#' placeholder='Direccion'></input>
-                <input onChange={e => setTelefono(e.target.value)} className='#' type='text' id='#' placeholder='Telefono'></input>
-                <button id="Bt_SendUser" type="submit">
-                    
-                </button>
+            <div className='ContainerAll'>
+                <div className='ContainerButtons'>
+                <h3>Registrarse</h3>
+                <input className='inputInfo' name="NombreCompleto" onChange={e => setNombreCompleto(e.target.value)} type='text' id='#' placeholder='Nombre Completo'></input>
+                <input className='inputInfo' onChange={e => setTD(e.target.value)} id='#' placeholder='Tipo de Identificacion' />
+                <input className='inputInfo' onChange={e => setNIdentifi(e.target.value)} type='number' id='#' placeholder='Numero de Identificacion'></input>
+                <input className='inputInfo' onChange={e => setCorreo(e.target.value)} type='text' id='#' placeholder='Correo Electronico'></input>
+                <input className='inputInfo' onChange={e => setPassword(e.target.value)} type='password' id='#' placeholder='Contraseña'></input>
+                <input className='inputInfo' onChange={e => setGenero(e.target.value)} id='#' placeholder='Genero' />
+                <input className='inputInfo' onChange={e => setDepartamento(e.target.value)} type='text' id='#' placeholder='Departamento'></input>
+                <input className='inputInfo' onChange={e => setMunicipio(e.target.value)} type='text' id='#' placeholder='Municipio'></input>
+                <input className='inputInfo' onChange={e => setDireccion(e.target.value)} type='text' id='#' placeholder='Direccion'></input>
+                <input className='inputInfo' onChange={e => setTelefono(e.target.value)} type='text' id='#' placeholder='Telefono'></input>
+                <button id="Bt_SendUser" type="submit">Registrarse</button>
+                <div className="DecorationPlaceHolder">
+                    <p>________________________________</p><br/>
+                </div>
+                <Link to="/Login"><a value="Iniciar Sesion">Iniciar Sesión</a></Link> 
+            </div>
             </div>
         </form>
         </>

@@ -1,6 +1,6 @@
-import react, {useEffect, useState, useHistory} from 'react';
+import react, {useEffect, useState} from 'react';
 import './MainContentLogin.css'
-import { Link, withRouter, Redirect, browserHistory } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import Cookies from 'universal-cookie';
 import axios from 'axios';
 
@@ -61,23 +61,20 @@ export const Main = () =>{
 
     return(
         <>
-            <div className="ContainerAll">
-                <div className="ContainerButtons">
-                    <input name="Correo" onChange={handleChange} className="InputEmailContent" type="text" placeholder="Correo"></input>
+            <div className="ContainerAll1">
+                <div className="ContainerButtons1">
+                    <h3>Iniciar Sesión</h3>
+                    <input name="Correo" onChange={handleChange} className="Input1" type="email" placeholder=" Correo Electrónico"></input>
                     <br/>
-                    <input name="Password" onChange={handleChange} className="InputPasswordContent" type="password"  placeholder="Contraseña"></input><br/>
-                    <div className="AccountLoginContent">
-                        <button onClick={()=>LoginUser()} value="Iniciar_sesion">Iniciar sesion</button><br/>
-                    </div>    
-                    <div className="MissedButtonContent">
-                        <a className="" >¿Olvidaste tu contraseña?</a><br/>
+                    <input name="Password" onChange={handleChange} className="Input1" type="password"  placeholder=" Contraseña"></input><br/>
+                    <button onClick={()=>LoginUser()} value="Iniciar_sesion">Iniciar Sesión</button>  
+                    <div className="MissedButtonContent1">
+                        <li >¿Olvidaste tu contraseña?</li><br/>
                     </div>
-                    <div className="DecorationPlaceHolder">
-                         <p>________________o________________</p><br/>
+                    <div className="DecorationPlaceHolder1">
+                        <p>________________________________</p><br/>
                     </div>
-                    <div className="NewAccountButtonContent">
                     <Link to="/Register"><a value="Crear_cuenta_nueva">Crear cuenta nueva</a></Link>
-                    </div> 
                 </div>
             </div>
         </>

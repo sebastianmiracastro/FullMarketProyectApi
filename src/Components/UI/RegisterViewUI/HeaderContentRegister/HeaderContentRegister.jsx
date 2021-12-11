@@ -1,15 +1,14 @@
 import './HeaderContentRegister.css';
-// import {ImageContentHeader} from '../../../../Images/Images-LoginView/FullMarketLogin.jpeg';
+import LoginHeader from '../../../../Images/Images-RegisterViews/FullMarket.png';
 
 
 export const HeaderReg = () => {
     return(
         <>
-        <div className="ContainerProgram">
-            {/* <img src={ImageContentHeader} alt="" className="ImageContentHeader"></img> */}
-            <h1 className="TittleContentIni">Registrate</h1>
+        <div className="loginContainer">
+            <img src={LoginHeader} alt="Logo-FullMarket" className="loginHeader"></img>
         </div>
         </>
     )
-
 }
+

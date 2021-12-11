@@ -1,14 +1,11 @@
 import './HeaderContentLogin.css'
-import ImageContentHeader from '../../../../Images/Images-LoginView/FullMarketLogin.jpeg'
+import LoginHeader from '../../../../Images/Images-LoginView/FullMarket.png'
 
 export const HeaderLogin =()=>{
     return(
         <>
-            <div className="ContainerProgram">
-                <img src={ImageContentHeader} alt="" className="ImageContentHeader"></img>
-                <h1 className="TittleContentIni">Iniciar Sesion</h1>
-                <p className="TxTContentLogin">Inicia sesion aquí totalmente gratis 
-                para una excelente experencia</p>
+            <div className="loginContainer">
+                <img src={LoginHeader} alt="Logo-FullMarket" className="loginHeader"></img>
             </div>
         </>
     );

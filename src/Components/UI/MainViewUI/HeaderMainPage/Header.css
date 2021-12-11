@@ -1,32 +1,150 @@
-.Container-Header{
+.header {
     display: flex;
     justify-content: space-evenly;
-    background-color: black;
-}
-.ContentOptionsNavBar{
-    display: flex;
-    justify-content: space-evenly;
-    width: 400px;
-    color: white;
-    margin-top: 70px;
+    background-color: #000000;
+    height: auto;
 }
 
-.ImgContent{
-    height: 180px;
+.LogoFullMarket {
+    width: 10rem;
+    height: auto;
+    margin: none;
+    margin-right: 14rem;
 }
-.OptionNavbar{
-    background-color: #45b3f3;
-    height: 30px;
-    width: 120px;
-    border-radius: 2em;
-    text-align: center;
-}
-.OptionNavbar:hover{
+
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    width: 7rem;
+    height: 1.8rem;
+    display: flex;
+    align-items: center;
+    background-color: #00E8FF;
+    color: #000000;
+    border-radius: 5rem;
+    justify-content: center;
     cursor: pointer;
-    transform: scale(1.2);
-    transition: 300ms;
+    margin-left: 2rem;
 }
-.Content-Page{
-    background-color:blueviolet ;
-    height: 10px;
+a:hover{
+    background-color: #0AFF38;
+    color: #000000;
+    transition: 600ms;
+}
+
+.NavBarOptions{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 20rem;
+    width: 20rem;
+    margin-top: 50px;
+}
+
+.spaceHeader{
+    background-color: #00E8FF;
+    height: 4px;
+}
+
+
+@media screen and (max-width: 992px) {
+    .header{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #000000;
+        height: 3rem;
+    }
+    
+    .LogoFullMarket {
+        width: 5rem;
+        height: auto;
+        margin: none;
+        margin-right: 4rem;
+    }
+
+
+
+    a{
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        width: 7rem;
+        height: 1.8rem;
+        display: flex;
+        align-items: center;
+        background-color: #00E8FF;
+        color: #000000;
+        border-radius: 5rem;
+        justify-content: center;
+        cursor: pointer;
+        margin-left: 2rem;
+    }
+    a:hover{
+        background-color: #0AFF38;
+        color: #000000;
+        transition: 600ms;
+    }
+    
+    .NavBarOptions{
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 20rem;
+        width: 20rem;
+        margin-top: 50px;
+    }
+    .spaceHeader{
+        background-color: #00E8FF;
+        height: 2px;
+    }
+  }
+  
+  /* On screens that are 600px wide or less, the background color is olive */
+  @media screen and (max-width: 600px) {
+    .header{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #000000;
+        height: 2rem;
+    }
+    
+    .LogoFullMarket {
+        width: 5rem;
+        height: auto;
+        margin: none;
+        margin-right: 4rem;
+    }
+    a{
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        width: 0.5rem;
+        height: 0.5rem;
+        display: flex;
+        align-items: center;
+        background-color: #00E8FF;
+        color: #000000;
+        border-radius: 5rem;
+        justify-content: center;
+        cursor: pointer;
+        margin-left: 1rem;
+    }
+    a:hover{
+        background-color: #0AFF38;
+        color: #000000;
+        transition: 600ms;
+    }
+    
+    .NavBarOptions{
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 3rem;
+        width: 5rem;
+        margin-top: 0.5rem;
+    }
+
+
+
+
+    .spaceHeader{
+        background-color: #0AFF38;
+        height: 2px;
+    }
+
 }
